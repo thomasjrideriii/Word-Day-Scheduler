@@ -21,9 +21,6 @@ $("button").click(function(event){
     var hourNum = this.id
     var slot = this.id
     localStorage.setItem(slot, $("#txt"+hourNum).val())
-    console.log(this.id)
-    console.log($("#txt"+hourNum).val())
-    console.log(localStorage.getItem(slot))
 })
 
 init()
