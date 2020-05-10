@@ -1,7 +1,9 @@
 $("#currentDay").text(moment().format("LLLL"));
+$(".collapse").hide()
+$(".hide-row").attr("style", "height: 0px")
 
 function init() {
-  for (var i = 9; i < 18; i++) {
+  for (var i = 0; i < 24; i++) {
     $("#txt" + i).val(localStorage.getItem(i));
   }
   setInterval(function () {
@@ -12,7 +14,7 @@ function init() {
 }
 
 function colorShift() {
-  for (var i = 9; i < 18; i++) {
+  for (var i = 0; i < 24; i++) {
     if (i < moment().hour()) {
       $("#txt" + i).addClass("past");
     } else if (i === moment().hour()) {
@@ -28,5 +30,17 @@ $("button").click(function (event) {
   var hourNum = this.id;
   localStorage.setItem(hourNum, $("#txt" + hourNum).val());
 });
+
+$("#btnShow").click(function(event) {
+    event.preventDefault();
+    $(".collapse").show();
+    $(".hide-row").removeAttr("style")
+});
+
+$("#btnHide").click(function(event) {
+    event.preventDefault();
+    $(".collapse").hide();
+    $(".hide-row").attr("style", "height: 0px")
+})
 
 init();

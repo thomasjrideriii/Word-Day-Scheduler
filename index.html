@@ -27,71 +27,74 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <button id="btnShow" class="btn btn-success">Show Non-work Hours</button>
+      <button id="btnHide" class="btn btn-danger">Hide Non-work Hours</button>
     </header>
+
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="row" data-value="0">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="0">
+        <div class="col-md-1 border border-secondary time-block collapse">
           12AM
         </div>
-        <input id="txt0" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="0" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt0" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="0" class="col-md-1 saveBtn border-0  collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="1">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="1">
+        <div class="col-md-1 border border-secondary time-block collapse">
           1AM
         </div>
-        <input id="txt1" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="1" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt1" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="1" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="2">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="2">
+        <div class="col-md-1 border border-secondary time-block collapse">
           2AM
         </div>
-        <input id="txt2" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="2" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt2" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="2" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="3">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="3">
+        <div class="col-md-1 border border-secondary time-block collapse">
           3AM
         </div>
-        <input id="txt3" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="3" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt3" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="3" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="4">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="4">
+        <div class="col-md-1 border border-secondary time-block collapse">
           4AM
         </div>
-        <input id="txt4" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="4" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt4" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="4" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="5">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="5">
+        <div class="col-md-1 border border-secondary time-block collapse">
           5AM
         </div>
-        <input id="txt5" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="5" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt5" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="5" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="6">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="6">
+        <div class="col-md-1 border border-secondary time-block collapse">
           6AM
         </div>
-        <input id="txt6" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="6" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt6" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="6" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="7">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="7">
+        <div class="col-md-1 border border-secondary time-block collapse">
           7AM
         </div>
-        <input id="txt7" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="7" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt7" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="7" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="8">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="8">
+        <div class="col-md-1 border border-secondary time-block collapse">
           8AM
         </div>
-        <input id="txt8" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="8" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt8" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="8" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
       <div class="row" data-value="9">
         <div class="col-md-1 border border-secondary time-block">
@@ -156,47 +159,47 @@
         <input id="txt17" class="col-md-10 border border-secondary" type="text" class="form-control">
         <button id="17" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="18">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="18">
+        <div class="col-md-1 border border-secondary time-block collapse">
           6PM
         </div>
-        <input id="txt18" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="18" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt18" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="18" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="19">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="19">
+        <div class="col-md-1 border border-secondary time-block collapse">
           7PM
         </div>
-        <input id="txt19" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="19" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt19" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="19" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="20">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="20">
+        <div class="col-md-1 border border-secondary time-block collapse">
           8PM
         </div>
-        <input id="txt20" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="20" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt20" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="20" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="21">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="21">
+        <div class="col-md-1 border border-secondary time-block collapse">
           9PM
         </div>
-        <input id="txt21" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="21" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt21" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="21" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="22">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="22">
+        <div class="col-md-1 border border-secondary time-block collapse">
           10PM
         </div>
-        <input id="txt22" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="22" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt22" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="22" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
-      <div class="row" data-value="23">
-        <div class="col-md-1 border border-secondary time-block">
+      <div class="row hide-row" data-value="23">
+        <div class="col-md-1 border border-secondary time-block collapse">
           11PM
         </div>
-        <input id="txt23" class="col-md-10 border border-secondary" type="text" class="form-control">
-        <button id="23" class="col-md-1 saveBtn border-0"><i class="far fa-save"></i></button>
+        <input id="txt23" class="col-md-10 border border-secondary collapse" type="text" class="form-control">
+        <button id="23" class="col-md-1 saveBtn border-0 collapse"><i class="far fa-save"></i></button>
       </div>
     </div>
     <br>
