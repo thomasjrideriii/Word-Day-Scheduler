@@ -1,25 +1,31 @@
-$("#currentDay").text(moment().format("LLLL"))
+$("#currentDay").text(moment().format("LLLL"));
 
-function init(){
-    for (var i = 9; i < 18; i++) {
-        $("#txt"+i).val(localStorage.getItem(i))
-    }
+function init() {
+  for (var i = 9; i < 18; i++) {
+    $("#txt" + i).val(localStorage.getItem(i));
+  }
+  setInterval(function () {
+    $("#currentDay").text(moment().format("LLLL"));
+  }, 15000);
+  colorShift();
 }
 
-for (var i = 9; i < 18; i++) {
+function colorShift() {
+  for (var i = 9; i < 18; i++) {
     if (i < moment().hour()) {
-        $("#txt"+i).addClass("past")
+      $("#txt" + i).addClass("past");
     } else if (i === moment().hour()) {
-        $("#txt"+i).addClass("present")
+      $("#txt" + i).addClass("present");
     } else {
-        $("#txt"+i).addClass("future")
+      $("#txt" + i).addClass("future");
     }
+  }
 }
 
-$("button").click(function(event){
-    event.preventDefault()
-    var hourNum = this.id
-    localStorage.setItem(hourNum, $("#txt"+hourNum).val())
-})
+$("button").click(function (event) {
+  event.preventDefault();
+  var hourNum = this.id;
+  localStorage.setItem(hourNum, $("#txt" + hourNum).val());
+});
 
-init()
+init();
