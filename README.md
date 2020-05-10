@@ -1,6 +1,6 @@
 # Work-Day-Scheduler
 
-![Example of Functional Planner](Assets\WDSscreenshot.JPG)
+![Example of Functional Planner](Assets/WDSscreenshot.JPG)
 
 The Work Day Scheduler has time slots available from 9am to 5pm, and is able to save the contents of each time slot to local storage, allowing the page to be closed and reloaded without losing content.
 
@@ -10,4 +10,4 @@ Additonally, as the hour of the day shifts, the text tiles will change colors to
 
 The Date and Time up at the top of the page update every 15 seconds, which also refreshes the background colors of the page, checking if the hour has passed while the page is being viewed. 
 
-There are additional non-work hours that are added to the planner, but are hidden on the original page.  They can be toggled on and off with the buttons near the top.
+There are rows for non-work hours that can be hidden and displayed from the buttons at the top of the page. These rows are fully functional and retain their information between sessions.
