@@ -6,6 +6,7 @@ function init() {
   }
   setInterval(function () {
     $("#currentDay").text(moment().format("LLLL"));
+    colorShift();
   }, 15000);
   colorShift();
 }
