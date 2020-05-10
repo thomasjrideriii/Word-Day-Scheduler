@@ -1,6 +1,6 @@
 # Work-Day-Scheduler
 
-![Example of Functional Planner](Assets\WDSscreenshot.JPG)
+![Example of Functional Planner](Assets/WDSscreenshot.JPG)
 
 The Work Day Scheduler has time slots available from 9am to 5pm, and is able to save the contents of each time slot to local storage, allowing the page to be closed and reloaded without losing content.
 
