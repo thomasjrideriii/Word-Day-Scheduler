@@ -1,5 +1,7 @@
 # Work-Day-Scheduler
 
+![Example of Functional Planner](Assets\WDSscreenshot.JPG)
+
 The Work Day Scheduler has time slots available from 9am to 5pm, and is able to save the contents of each time slot to local storage, allowing the page to be closed and reloaded without losing content.
 
 Each save button on the side of the input boxes saves only the content of that box, allowing for specific changes to be made on each line without overwriting or re-saving the contents of the entire page.  
